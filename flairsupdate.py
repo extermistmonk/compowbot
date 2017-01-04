@@ -48,11 +48,12 @@ def update_user_flair(user):
                 flairimage = lastflair
             else:
                 flairimage = 'diamond'
+        else:
+            flairimage = topflair
     elif flairmode == 1:
         flairimage = lastflair
     else:
         flairimage = topflair
-    print flairimage
     subreddit.flair.set(user.reddit_username, str(lastrank) +
                         " (High: " + str(toprank) + ")", "rank " + flairimage)
 
