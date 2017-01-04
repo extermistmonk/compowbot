@@ -1,0 +1,8 @@
+config.ini
+*.pyc
+*.db
+*.sublime-project
+*.sublime-workspace
+*.crt
+*.key
+*.crt
